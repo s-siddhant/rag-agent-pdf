@@ -61,6 +61,6 @@ Response:
 ```
 
 ## Notes
-Make sure that you have the necessary permissions set for your Hugging Face token.
-If using Docker, make sure that Docker is properly set up on your machine.
-The project requires an internet connection to download model weights from Hugging Face.
+- Make sure that you have the necessary permissions set for your Hugging Face token.
+- If using Docker, make sure that Docker is properly set up on your machine.
+- The project requires an internet connection to download model weights from Hugging Face.
