@@ -37,17 +37,17 @@ HF_TOKEN=your_hugging_face_token
 
 ## API Endpoints
 1. Upload File
-Uploads a PDF file for processing.
-URL: /upload
-Method: POST
-Form Data: File (PDF)
-Response: A message indicating the file has been processed.
+- Uploads a PDF file for processing.
+- URL: /upload
+- Method: POST
+- Form Data: File (PDF)
+- Response: A message indicating the file has been processed.
 
 2. Ask Question
-Ask a question about the uploaded document.
-URL: /ask
-Method: POST
-Request Body:
+- Ask a question about the uploaded document.
+- URL: /ask
+- Method: POST
+- Request Body:
 ```bash
 {
   "question": "Your question here"
