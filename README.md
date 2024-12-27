@@ -30,7 +30,8 @@ git clone https://github.com/your-username/rag-agent-pdf.git
 cd rag-agent-pdf
 ```
 Create a .env File
-Make sure you have your Hugging Face token stored in a .env file (don't push this to your repository for security reasons). Create a .env file in the root directory and add the following:
+- Make sure you have your Hugging Face token stored in a .env file (don't push this to your repository for security reasons).
+- Create a .env file in the root directory and add the following:
 ```bash
 HF_TOKEN=your_hugging_face_token
 ```
