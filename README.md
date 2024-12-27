@@ -29,9 +29,38 @@ The project consists of the following components:
 git clone https://github.com/your-username/rag-agent-pdf.git
 cd rag-agent-pdf
 ```
-
-1. Create a .env File
+Create a .env File
 Make sure you have your Hugging Face token stored in a .env file (don't push this to your repository for security reasons). Create a .env file in the root directory and add the following:
 ```bash
 HF_TOKEN=your_hugging_face_token
 ```
+
+## API Endpoints
+1. Upload File
+Uploads a PDF file for processing.
+URL: /upload
+Method: POST
+Form Data: File (PDF)
+Response: A message indicating the file has been processed.
+
+2. Ask Question
+Ask a question about the uploaded document.
+URL: /ask
+Method: POST
+Request Body:
+```bash
+{
+  "question": "Your question here"
+}
+```
+Response:
+```bash
+{
+  "answer": "The answer to your question."
+}
+```
+
+## Notes
+Make sure that you have the necessary permissions set for your Hugging Face token.
+If using Docker, make sure that Docker is properly set up on your machine.
+The project requires an internet connection to download model weights from Hugging Face.
